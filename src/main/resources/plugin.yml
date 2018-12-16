@@ -1,11 +1,11 @@
-name: TeamGuild
-version: 1.1.5
+name: LiteTeam
+version: 1.1.7
 author: Himmelt
-main: org.soraworld.guild.TeamGuild
+main: org.soraworld.team.LiteTeam
 depend: [Violet]
 softdepend: [Vault,Essentials,PlayerPoints,PlaceholderAPI,Residence]
-website: https://github.com/Himmelt/TeamGuild
-description: TeamGuild Plugin.
+website: https://github.com/Himmelt/LiteTeam
+description: LiteTeam Plugin.
 permissions:
-  teamguild.admin:
+  liteteam.admin:
     default: op

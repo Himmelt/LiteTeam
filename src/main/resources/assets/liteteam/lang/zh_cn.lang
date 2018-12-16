@@ -1,0 +1,180 @@
+# 中文语言文件(Chinese Language File)
+# 请使用 UTF-8 编码
+
+chatHead = "[队  伍] "
+
+# 第三方依赖
+flans {
+  hook = "&a已检测到枪械 Flans 必须类, 将启用枪械支持."
+  notHook = "&6未检测到枪械 Flans 必须类, 将禁用枪械支持."
+}
+vault {
+  ecoImpl = "&a已检测到 &eVault&a 经济系统, 实现插件 &e%s&r 货币名称 &a%s"
+  noEcoImpl = "&c已检测到 &eVault&c 经济系统, 但没有实现插件, 对接失败."
+}
+economy {
+  hook = "&a已检测到 &e%s&a 经济系统, 对接完成."
+  notHook = "&c未检测到 &e%s&c 经济系统, 对接失败."
+  invalid = "&c无效的经济系统 %s , 请检查配置项和对应经济插件."
+}
+placeholder {
+  notHook = "PlaceholderAPI 变量插件没有对接，此功能不可用 !"
+  expansionSuccess = "PlaceholderAPI 队伍扩展 注册成功."
+  expansionFailed = "PlaceholderAPI 队伍扩展 注册失败 !"
+}
+residence {
+  notHook = "Residence 领地插件没有对接，此功能不可用."
+}
+
+# 信息
+info {
+  display = "队伍名称: %s"
+  leader = "队伍队长: %s"
+  balance = "队伍资金: %.2f"
+  members = "队伍成员: %d/%d"
+}
+
+teamPvPTrue = "已允许队伍PVP."
+teamPvPFalse = "已禁止队伍PVP."
+
+# 成员列表
+list {
+  head = "------------队伍 %s 的成员--------------"
+  leader = "玩家: &e%s&r   身份: &e队长"
+  member = "玩家: %s   身份: 成员"
+  foot = "----------------------------------------------"
+}
+# 创建队伍
+create {
+  inTeam = "你已经加入一个队伍, 无法创建队伍."
+  success = "队伍创建成功, 已收取 %d 资金."
+  noEco = "创建队伍需要 %d 资金, 你没有足够资金."
+}
+
+# 申请加入
+application {
+  send = "已向 %s 队伍发送加入申请."
+  none = "玩家 %s 没有申请加入, 或申请已被处理."
+  receive = "玩家 &e%s&r 申请加入队伍."
+  accept = "已接受玩家 &e%s&r 的申请."
+  acceptMax = "申请受理失败, 队伍人数已达最大."
+  accepted = "%s 接受了你的申请, 你已加入 %s 队伍."
+  acceptedMax = "%s 已受理你的申请, 但人数已达上限, 无法加入 %s 队伍."
+  reject = "已拒绝玩家 &e%s&r 的申请."
+  rejected = "你的申请已被队伍管理员拒绝."
+  alreadyIn = "玩家 %s 已加入 %s 队伍, 已忽略本次申请."
+}
+
+# 玩家消息
+player {
+  notInAny = "你没有加入任何队伍."
+  ownNone = "你没有创建任何队伍."
+  notLeaderAdmin = "你需要管理权限<&c%s&r>或身为队长才能执行操作."
+  alreadyJoined = "你已经加入该队伍, 无需重复加入."
+  inAnother = "你已加入其他队伍, 无法完成操作."
+  noEco = "你没有足够的资金."
+  offline = "玩家不在线."
+}
+leader {
+  cantLeave = "队伍队长无法离开队伍, 但可以转让或解散队伍."
+  notLeader = "你不是队伍所有者."
+}
+manager {
+  cantKickLeader = "你无法将队长移出队伍."
+  cantKickManager = "你无法将另一个管理移出队伍."
+  kickSuccess = "你将成员 %s 移出了队伍."
+  notManager = "你不是队伍管理员."
+}
+member {
+  leave = "你离开了 %s 队伍."
+  beKicked = "你被队伍管理 %s 移出了队伍."
+}
+# 队伍消息
+guild {
+  notifyLeave = "玩家 %s 退出了队伍."
+  disband = "队伍 %s 已被解散."
+  notExist = "队伍不存在."
+  donate = "你向队伍捐赠了 %.2f 资金."
+  eco {
+    give = "给与 %s 队伍 %.2f 资金."
+    take = "拿走 %s 队伍 %.2f 资金."
+    none = "%s 队伍只有 %.2f 资金."
+  }
+  cantUnsetLeader = "你不能移除队长的管理权."
+  isNotManager = "玩家 %s 不是队伍管理员或未加入本队伍."
+  upMaxMembers = "队伍人数已满 !"
+  noMember = "队伍中没有 %s 这个成员."
+}
+
+# 邀请加入
+invite {
+  send = "已向 %s 发送邀请."
+  cancel = "已取消邀请 %s ."
+  cancelAll = "已取消所有邀请."
+  accept = "你接受了邀请, 现在你是 %s 队伍的成员了."
+  notInvited = "你没有被邀请, 或邀请已取消."
+  reject = "你拒绝了邀请."
+  receive = "%s 邀请你加入 %s 队伍 "
+  max = "该队伍人数已满, 无法加入."
+}
+
+# 队伍领地
+home {
+  notExist = "队伍领地未创建."
+  created = "队伍领地创建成功."
+  createFailed = "队伍领地创建失败."
+  alreadyExist = "队伍领地已存在."
+  noEco = "队伍资金不足, 无法创建领地, 请重新选择区域."
+  remove = "队伍领地已删除."
+  selectFirst = "请先用工具选择领地范围."
+  tpSuccess = "已抵达队伍领地传送点."
+  tpFailed = "无法抵达队伍领地传送点."
+}
+
+get {
+  display = "队伍当前显示名是 %s"
+  description = "队伍简介: %s"
+}
+set {
+  display = "队伍显示名已设置为 %s"
+  description = "已设置队伍简介为: %s"
+}
+
+# 高级文本
+acceptText = " &a接受 "
+rejectText = " &c拒绝 "
+clickJoin = " &a&l申请加入"
+acceptHover = "点击&a接受"
+rejectHover = "点击&c拒绝"
+
+textTooLong = "&c你设置的文本长度已超过 %d , 请调整后重试. (注: 中文占2个长度)"
+EncodingException = "&c&l编码错误, 请开启调试模式到控制台查看详细信息."
+notImpl = "功能尚未实现, 敬请期待 !"
+
+pvpOn = "队伍PVP已开启."
+pvpOff = "队伍PVP已关闭."
+
+# tpr 随机传送
+tpr {
+  startTp = "随机传送将于 %d 秒后执行, 你可以使用 /team tprcancel 取消传送"
+  inTprTask = "当前已有传送任务在运行."
+  receiveTpr = "队长邀请你一起传送 是否 "
+  tprCanceled = "传送任务已取消."
+  accept = "你接受了队长的传送邀请."
+  notInSameWorld = "你与队长不在同一个世界, 请前往队长所在世界, 否则可能无法传送."
+  noTprTask = "队长没有发起传送任务."
+  timeDelay = "距离传送还有 %d 秒."
+}
+
+# 注释文本
+comment {
+  ecoType = "需要对接的经济系统插件\n目前支持的经济插件: \n1. Vault经济服务 (任何实现了Vault经济服务的插件都可以, 例如PlayerPoints)\n2. Essentials\n3. PlayerPoints"
+  ignoreNoEco = "没有经济系统时是否允许创建队伍."
+  teamCost = "创建队伍收取的资金."
+  textCommand = "用于聊天文字点击的命令, 此处已默认插件主命令,\n请勿随意修改, 只有在默认命令冲突无效时才需要修改."
+  tprDelay = "队伍随机传送延时(单位: 秒)"
+  tprSameWorld = "队员传送是否需要与队长在同一世界."
+  minRadius = "队伍随机传送最小半径"
+  maxRadius = "队伍随机传送最大半径"
+  fixHeight = "队伍随机传送固定高度"
+}

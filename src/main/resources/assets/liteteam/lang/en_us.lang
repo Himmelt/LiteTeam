@@ -1,0 +1,198 @@
+# English Language File
+# Please keep UTF-8 encoding
+
+chatHead = "[TeamTeam] "
+
+# Third-party
+flans {
+  hook = "&aFound Flans class, will support Flans."
+  notHook = "&6Not Found Flans class, will not support Flans."
+}
+vault {
+  ecoImpl = "&aFound &eVault&a economy service, implement plugin &e%s&r currency-name &a%s"
+  noEcoImpl = "&cFound &eVault&c economy service, but no Implement, hook failed."
+}
+economy {
+  hook = "&aFound &e%s&a economy system, hook success."
+  notHook = "&cNot found any &e%s&c economy system, hook failed."
+  invalid = "&cInvalid economy-system %s , please check config and economy plugin."
+}
+placeholder {
+  notHook = "PlaceholderAPI not hook."
+  expansionSuccess = "PlaceholderAPI team expansion register success."
+  expansionFailed = "PlaceholderAPI team expansion register failed !"
+}
+residence {
+  notHook = "Residence not hook."
+}
+
+# tops
+top {
+  head = "----------------------------Team Tops----------------------------"
+  line = "%4d %-20sFrame %-8dLeader %-16s"
+  line1 = "%4d  "
+  line2 = "  Frame %-8dLeader %-16s"
+  join = " &a&lJoin"
+  foot = "---------------------------- %d/%d Page----------------------------"
+}
+# info
+info {
+  display = "Team Name: %s"
+  leader = "Team Leader: %s"
+  level = "Team Level: %d"
+  frame = "Team Frame: %d"
+  balance = "Team Balance: %.2f"
+  members = "Team Members: %d/%d"
+  managers = "Team Managers: %d/%d"
+  description = "Team Description:\n%s"
+}
+# members list
+list {
+  head = "------------Team %s's members--------------"
+  leader = "Name: &e%s&r   Role: &eLeader"
+  manager = "Name: &a%s&r   Role: &aManager"
+  member = "Name: %s   Role: Member"
+  foot = "----------------------------------------------"
+}
+# create team
+create {
+  inTeam = "You have joined a team, can't create team."
+  success = "Team created success, took you %d money."
+  noEco = "This need %d money, you can't pay it."
+}
+# dailyBonus
+dailyBonus {
+  claim = "Claim today's bonus for team-top success."
+  claimed = "You have claimed today's bonus."
+}
+# join application
+application {
+  send = "Appliction has been sent to %s team."
+  none = "Player %s dosen't send application or has been dealed."
+  receive = "Player &e%s&r apply to join you team."
+  accept = "Accepted player &e%s&r's applcation."
+  acceptMax = "Application deal failed, members is maximum."
+  accepted = "%s accepted your application, you are in %s team."
+  acceptedMax = "%s accept your application, but members is up to maximum, you can't join %s team."
+  reject = "Rejected &e%s&r's application."
+  rejected = "Your application was rejected by team manager."
+  alreadyIn = "Player %s has joined %s team, ignore this application."
+}
+
+# player message
+player {
+  notInAny = "You have not joined any team."
+  ownNone = "You have not created any team."
+  notLeaderAdmin = "You need permission <&c%s&r> or be the team's leader to do this."
+  alreadyJoined = "You already joined the team, no need to join again."
+  inAnother = "You have joined another team."
+  noEco = "You don't have enough money."
+  offline = "Player is offline."
+}
+leader {
+  cantLeave = "Leader can't leave team, but can attorn or disband it."
+  notLeader = "You are not the team's leader."
+}
+manager {
+  cantKickLeader = "You can't kick your leader."
+  cantKickManager = "You can't kick another manager."
+  kickSuccess = "You moved member %s out of the team."
+  notManager = "You are not the team's manager."
+}
+member {
+  leave = "You left %s team."
+  beKicked = "You are moved out %s team by the manager."
+}
+# 公会消息
+guild {
+  notifyLeave = "Member %s left the team."
+  disband = "Team %s has been disbanded."
+  topLevel = "Team is up to max level, cant upgrade."
+  upgrade = "Team upgrade success, has took %d money."
+  notExist = "Team not exist."
+  donate = "You donated %.2f money to your team."
+  eco {
+    give = "Give %s team %.2f money."
+    take = "Take %s team %.2f money."
+    none = "%s team has only %.2f money."
+  }
+  frame {
+    give = "Give %s team %d frame."
+    take = "Take %s team %d frame."
+    none = "%s team has only %d frame."
+  }
+  setMan = "Set player %s as team's manager."
+  cantUnsetLeader = "You cant unset team's leader."
+  unsetMan = "Unset %s's team manager."
+  isNotManager = "Player %s is not manager or not in the team."
+  addFrame = "Add %d frame to %s team."
+  takeFrame = "Take %s team %d frame."
+  upMaxMembers = "Team members is up to maximum !"
+  noMember = "Team has no %s member."
+  maxMan = "Team managers is up to maximum !"
+}
+
+# invite sb
+invite {
+  send = "Invitation has been sent to %s ."
+  cancel = "Canceled inviting %s ."
+  cancelAll = "Canceled all invitations."
+  accept = "You accept the invitation, you are now one of the %s team."
+  notInvited = "You are not invited, or the invitation was canceled."
+  reject = "You reject the invitation."
+  receive = "%s invites you to join %s team "
+  max = "The team's members is up to max."
+}
+
+# team residence
+home {
+  notExist = "Team's home not exist."
+  created = "Create team's home success."
+  createFailed = "Create team's home failed."
+  alreadyExist = "Team's home already exist."
+  noEco = "Team's balance cant pay for your selection."
+  remove = "Team's home was deleted."
+  selectFirst = "Please use tool select two point first."
+  tpSuccess = "You have reached team's home."
+  tpFailed = "You can't go to team home."
+}
+
+get {
+  display = "Team's display-name is %s"
+  description = "Team's description is: %s"
+}
+set {
+  display = "Team's display-name is set to %s"
+  description = "Team's description is set to: %s"
+}
+
+# click text
+acceptText = " &aAccept "
+rejectText = " &cReject "
+clickJoin = " &a&lJoin"
+acceptHover = "Click&aJoin"
+rejectHover = "Click&cReject"
+
+textTooLong = "&cText length is too long than %d, please check and try again."
+EncodingException = "&c&lEncode Error, please switch to DEBUG mode and check the console."
+showRankJoin = "Set shown 'ClickJoin' clickable text in team tops."
+notShowRankJoin = "Set hidden 'ClickJoin' clickable text in team tops."
+notImpl = "WIP, please wait !"
+
+# comment
+comment {
+  ecoType = "Linked economy plugin\nCurrent support: \n1. Vault Economy Service (Any Economy Service implement can use, e.g. PlayerPoints)\n2. Essentials\n3. PlayerPoints"
+  ignoreNoEco = "Enable to create team when economy system is invalid."
+  teamPvP = "Allow team members' pvp (restart change)"
+  attornLeave = "Leave the team when attorn to other."
+  maxDisplay = "Maximum of display's characters, color codes are included."
+  maxDescription = "Maximum of description's characters."
+  textCommand = "Command used when chat click, default plugin main command,\nPlease don't edit unless commands confliction or can't use."
+  dailyBonus = "Daily Bonus for team tops, every rank has a list of commands.\ncommand dont startswith / , {leader} is the leader's name or team's id."
+  levels = "Team levels settings\nLevels, auto sort, no need to sort by hand."
+  level {
+    size = "This level maximum members"
+    cost = "Cost for upgrading to this level"
+    mans = "This level maximun managers"
+  }
+}
