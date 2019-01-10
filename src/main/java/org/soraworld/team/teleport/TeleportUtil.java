@@ -1,6 +1,9 @@
 package org.soraworld.team.teleport;
 
 import mcheli.parachute.MCH_EntityParachute;
+import mcheli.tank.MCH_EntityTank;
+import mcheli.tank.MCH_TankInfo;
+import mcheli.tank.MCH_TankInfoManager;
 import net.minecraft.server.v1_7_R4.Entity;
 import net.minecraft.server.v1_7_R4.EntityPlayer;
 import net.minecraft.server.v1_7_R4.MathHelper;
@@ -157,5 +160,23 @@ public class TeleportUtil {
             }
         }
         return -1;
+    }
+
+    public MCH_EntityTank createTank(World bukkitWorld, double x, double y, double z, String name) {
+        net.minecraft.server.v1_7_R4.World world = ((CraftWorld) bukkitWorld).getHandle();
+        MCH_TankInfo info = MCH_TankInfoManager.get(name);
+        if (info == null) {
+            return null;
+        } else {
+            MCH_EntityTank tank = new MCH_EntityTank(world);
+            tank.setPosition(x, y + (double) tank.height, z);
+            tank.lastX = x;
+            tank.lastY = y;
+            tank.lastZ = z;
+            tank.camera.setPosition(x, y, z);
+            tank.setTypeName(info.name);
+            tank.setTextureName(info.getTextureName());
+            return tank;
+        }
     }
 }

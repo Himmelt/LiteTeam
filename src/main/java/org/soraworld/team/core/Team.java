@@ -306,7 +306,7 @@ public class Team {
 
     public void teamChat(Player source, String message) {
         if (source != null) message = "[" + source.getName() + "] " + message;
-        else message = "[Team] " + message;
+        else message = manager.trans("teamPrefix") + message;
         Player player = leader.getPlayer();
         if (player != null) player.sendMessage(message);
         for (String mem : members) {
